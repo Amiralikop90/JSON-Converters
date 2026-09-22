@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ===== Google Search Console Verification ===== -->
+  <meta name="google-site-verification" content="mLworcsiofOhMsDaAZ9Vzi7Swi1QErd75vJHjTm8bxw" />
+
   <!-- ===== SEO: Title ===== -->
   <title>تبدیل‌گر آنلاین متن، لیست، CSV و کلید=مقدار به JSON | JSON Converter</title>
 
-  <!-- ===== SEO: Description (۱۵۵ کاراکتر) ===== -->
+  <!-- ===== SEO: Description ===== -->
   <meta name="description" content="ابزار آنلاین و رایگان تبدیل متن، لیست خطی، CSV و کلید=مقدار به JSON. پشتیبانی از فارسی، انگلیسی و چینی با تم تاریک و روشن. بدون نیاز به نصب.">
 
   <!-- ===== SEO: Keywords ===== -->
@@ -21,17 +24,17 @@
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 
   <!-- ===== SEO: Canonical ===== -->
-  <link rel="canonical" href="https://USERNAME.github.io/json-converter/">
+  <link rel="canonical" href="https://amiralik2012.github.io/JSON-Converters/">
 
   <!-- ===== SEO: Hreflang (multilingual) ===== -->
-  <link rel="alternate" hreflang="fa" href="https://USERNAME.github.io/json-converter/">
-  <link rel="alternate" hreflang="en" href="https://USERNAME.github.io/json-converter/?lang=en">
-  <link rel="alternate" hreflang="zh" href="https://USERNAME.github.io/json-converter/?lang=zh">
-  <link rel="alternate" hreflang="x-default" href="https://USERNAME.github.io/json-converter/">
+  <link rel="alternate" hreflang="fa" href="https://amiralik2012.github.io/JSON-Converters/">
+  <link rel="alternate" hreflang="en" href="https://amiralik2012.github.io/JSON-Converters/?lang=en">
+  <link rel="alternate" hreflang="zh" href="https://amiralik2012.github.io/JSON-Converters/?lang=zh">
+  <link rel="alternate" hreflang="x-default" href="https://amiralik2012.github.io/JSON-Converters/">
 
-  <!-- ===== Open Graph (Facebook, LinkedIn, Telegram) ===== -->
+  <!-- ===== Open Graph ===== -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://USERNAME.github.io/json-converter/">
+  <meta property="og:url" content="https://amiralik2012.github.io/JSON-Converters/">
   <meta property="og:title" content="تبدیل‌گر آنلاین متن، لیست، CSV و کلید=مقدار به JSON">
   <meta property="og:description" content="ابزار رایگان تبدیل متن، لیست، CSV و کلید=مقدار به JSON. پشتیبانی از فارسی، انگلیسی و چینی.">
   <meta property="og:locale" content="fa_IR">
@@ -57,13 +60,13 @@
   <!-- ===== Theme Color ===== -->
   <meta name="theme-color" content="#6366f1">
 
-  <!-- ===== JSON-LD Structured Data (Schema.org) ===== -->
+  <!-- ===== JSON-LD Structured Data ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "JSON Converter",
-    "url": "https://USERNAME.github.io/json-converter/",
+    "url": "https://amiralik2012.github.io/JSON-Converters/",
     "description": "ابزار آنلاین رایگان تبدیل متن، لیست، CSV و کلید=مقدار به JSON با پشتیبانی از فارسی، انگلیسی و چینی.",
     "applicationCategory": "DeveloperApplication",
     "operatingSystem": "Any",
@@ -237,7 +240,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* ===== بنر تبلیغاتی ===== */
     .promo-banner {
       display: block;
       text-decoration: none;
@@ -445,7 +447,6 @@
     .output::-webkit-scrollbar-track,
     textarea::-webkit-scrollbar-track { background: transparent; }
 
-    /* ===== بخش توضیحات SEO (متن اضافه برای نسبت متن به کد) ===== */
     .seo-content {
       margin-top: 40px;
       padding-top: 30px;
@@ -577,7 +578,6 @@
 
   <main class="container">
 
-    <!-- بنر تبلیغاتی psoa.ir -->
     <a href="https://psoa.ir" target="_blank" rel="noopener" class="promo-banner" aria-label="سایت رسمی امیرعلی کمانی">
       <div class="promo-content">
         <span class="promo-icon" aria-hidden="true">🚀</span>
@@ -599,7 +599,7 @@
       <button class="tab" data-mode="keyvalue" data-i18n="tabKeyValue" role="tab" aria-selected="false">کلید=مقدار</button>
     </div>
 
-    <label for="input" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;">ورودی داده برای تبدیل به JSON</label>
+    <label for="input" style="position:absolute;width:1px;height:1px;overflow:hidden;">ورودی داده برای تبدیل به JSON</label>
     <textarea id="input" aria-label="ورودی داده"></textarea>
 
     <div class="buttons">
@@ -611,7 +611,6 @@
 
     <pre id="output" class="output" dir="ltr" aria-live="polite"></pre>
 
-    <!-- ===== بخش توضیحات SEO ===== -->
     <section class="seo-content" id="seoContent">
       <h2 data-i18n="seoH2">درباره‌ی ابزار تبدیل به JSON</h2>
       <p data-i18n="seoP1">
@@ -666,19 +665,12 @@
   </main>
 
   <script>
-    // ===== ترجمه‌ها =====
     const translations = {
       fa: {
         title: '🔄 تبدیل‌گر آنلاین متن، لیست، CSV و کلید=مقدار به JSON',
         subtitle: 'هر متنی، لیست، یا داده‌ای رو وارد کن و در لحظه JSON تمیز و آماده بگیر',
-        tabText: 'متن ساده',
-        tabLines: 'لیست خطی',
-        tabCsv: 'CSV',
-        tabKeyValue: 'کلید=مقدار',
-        btnConvert: '✨ تبدیل به JSON',
-        btnCopy: '📋 کپی',
-        btnClear: '🗑️ پاک',
-        btnDownload: '💾 دانلود',
+        tabText: 'متن ساده', tabLines: 'لیست خطی', tabCsv: 'CSV', tabKeyValue: 'کلید=مقدار',
+        btnConvert: '✨ تبدیل به JSON', btnCopy: '📋 کپی', btnClear: '🗑️ پاک', btnDownload: '💾 دانلود',
         copied: '✅ شد!',
         outputPlaceholder: '// خروجی JSON اینجا نمایش داده میشه...',
         emptyInput: '// لطفاً اول چیزی وارد کن!',
@@ -715,14 +707,8 @@
       en: {
         title: '🔄 Convert Text, List, CSV & Key=Value to JSON Online',
         subtitle: 'Type any text, list, or data — get clean JSON instantly',
-        tabText: 'Plain Text',
-        tabLines: 'Line List',
-        tabCsv: 'CSV',
-        tabKeyValue: 'Key=Value',
-        btnConvert: '✨ Convert to JSON',
-        btnCopy: '📋 Copy',
-        btnClear: '🗑️ Clear',
-        btnDownload: '💾 Download',
+        tabText: 'Plain Text', tabLines: 'Line List', tabCsv: 'CSV', tabKeyValue: 'Key=Value',
+        btnConvert: '✨ Convert to JSON', btnCopy: '📋 Copy', btnClear: '🗑️ Clear', btnDownload: '💾 Download',
         copied: '✅ Done!',
         outputPlaceholder: '// JSON output appears here...',
         emptyInput: '// Please enter something first!',
@@ -759,14 +745,8 @@
       zh: {
         title: '🔄 在线文本、列表、CSV 和键=值转 JSON 工具',
         subtitle: '输入任意文本、列表或数据，立即获得干净的 JSON',
-        tabText: '纯文本',
-        tabLines: '行列表',
-        tabCsv: 'CSV',
-        tabKeyValue: '键=值',
-        btnConvert: '✨ 转换为 JSON',
-        btnCopy: '📋 复制',
-        btnClear: '🗑️ 清空',
-        btnDownload: '💾 下载',
+        tabText: '纯文本', tabLines: '行列表', tabCsv: 'CSV', tabKeyValue: '键=值',
+        btnConvert: '✨ 转换为 JSON', btnCopy: '📋 复制', btnClear: '🗑️ 清空', btnDownload: '💾 下载',
         copied: '✅ 完成！',
         outputPlaceholder: '// JSON 输出将显示在这里...',
         emptyInput: '// 请先输入内容！',
@@ -826,7 +806,6 @@
       themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
       currentTheme = theme;
       localStorage.setItem('theme', theme);
-      // آپدیت theme-color
       const meta = document.querySelector('meta[name="theme-color"]');
       if (meta) meta.setAttribute('content', theme === 'dark' ? '#0a0a0a' : '#f5f7fa');
     }
@@ -860,8 +839,6 @@
 
       updatePlaceholder();
       output.setAttribute('data-placeholder', t('outputPlaceholder'));
-
-      // آپدیت title صفحه برای SEO
       document.title = t('title');
     }
 
