@@ -265,9 +265,9 @@
     }
     .footer { text-align: center; margin-top: 28px; padding-top: 22px;
       border-top: 1px solid var(--border); font-size: 13px;
-      color: var(--text-muted);
+      color: var(--text-muted); line-height: 1.9;
     }
-    .footer a { color: var(--accent-1); text-decoration: none; font-weight: 600; }
+    .footer a { color: var(--accent-1); text-decoration: none; font-weight: 600; transition: color 0.2s; }
     .footer a:hover { color: var(--accent-2); text-decoration: underline; }
     @media (max-width: 640px) {
       .container { padding: 24px; margin-top: 60px; }
@@ -373,8 +373,9 @@
     </section>
 
     <footer class="footer">
-      <span data-i18n="footerText">ساخته شده توسط</span>
-      <a href="https://psoa.ir" target="_blank" rel="noopener">Amirali Kamani — psoa.ir</a>
+      <span data-i18n="footerText">برای دیدن لایسنس این وب‌سایت، لطفاً به</span>
+      <a href="https://psoa.ir/licens.php" target="_blank" rel="noopener">psoa.ir/licens.php</a>
+      <span data-i18n="footerText2">مراجعه کنید.</span>
     </footer>
 
   </main>
@@ -395,7 +396,8 @@
         placeholderKeyValue: 'نام=علی\nسن=25\nشهر=تهران',
         promoTitle: 'سایت رسمی من — psoa.ir',
         promoSubtitle: 'یه سر بزن، چیزهای جالبی داری!',
-        footerText: 'ساخته شده توسط',
+        footerText: 'برای دیدن لایسنس این وب‌سایت، لطفاً به',
+        footerText2: 'مراجعه کنید.',
         seoH2: 'درباره‌ی ابزار تبدیل به JSON',
         seoP1: 'این ابزار آنلاین و رایگان به شما کمک می‌کند تا هر نوع داده‌ی متنی، لیست خطی، فایل CSV یا جفت‌های کلید=مقدار را در کسری از ثانیه به ساختار JSON استاندارد تبدیل کنید. JSON یا JavaScript Object Notation، یک فرمت سبک و خوانا برای تبادل داده است که در تمام زبان‌های برنامه‌نویسی مدرن و APIها استفاده می‌شود.',
         seoH3Features: 'ویژگی‌های کلیدی',
@@ -433,7 +435,8 @@
         placeholderKeyValue: 'name=John\nage=25\ncity=NYC',
         promoTitle: 'My official website — psoa.ir',
         promoSubtitle: 'Drop by, there is something interesting!',
-        footerText: 'Made by',
+        footerText: 'To view the license of this website, please visit',
+        footerText2: '.',
         seoH2: 'About the JSON Converter Tool',
         seoP1: 'This free online tool helps you convert any text, line list, CSV file, or key=value pairs into standard JSON structure in a fraction of a second. JSON (JavaScript Object Notation) is a lightweight, human-readable format for data exchange used in all modern programming languages and APIs.',
         seoH3Features: 'Key Features',
@@ -471,7 +474,8 @@
         placeholderKeyValue: '姓名=张三\n年龄=25\n城市=北京',
         promoTitle: '我的官方网站 — psoa.ir',
         promoSubtitle: '来看看，会很有趣！',
-        footerText: '作者',
+        footerText: '要查看本网站的许可证，请访问',
+        footerText2: '。',
         seoH2: '关于 JSON 转换工具',
         seoP1: '这个免费的在线工具可以帮助您在几秒钟内将任何文本、行列表、CSV 文件或键=值对转换为标准 JSON 结构。JSON（JavaScript 对象表示法）是一种轻量级、人类可读的数据交换格式，用于所有现代编程语言和 API。',
         seoH3Features: '主要功能',
